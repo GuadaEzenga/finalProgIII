@@ -1,16 +1,84 @@
+body {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  background-color: #efeaf0;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1, h2 {
+  color: #320b66;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.95); 
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1000px;
+  max-height: 95vh;
+  overflow-y: auto;
+}
+
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/public/fondo.png'); 
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  z-index: -1;  
+}
+
+
 input, textarea {
   width: 100%;
-  padding: 8px;
-  margin: 5px 0;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #c685ec;
+  border-radius: 6px;
+  font-size: 16px;
 }
 
 button {
-  padding: 6px 12px;
-  margin-top: 5px;
+  padding: 8px 16px;
+  margin-top: 6px;
+  background-color: #c685ec;
+  color: white;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 ul {
   list-style: none;
   padding: 0;
+}
+
+li {
+  background-color: #7a5d8b;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+li strong {
+  font-size: 18px;
+}
+
+.filter-input {
+  margin-bottom: 20px;
 }
