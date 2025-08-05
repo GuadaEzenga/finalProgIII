@@ -1,0 +1,16 @@
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+button {
+  padding: 6px 12px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
